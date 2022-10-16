@@ -1,1 +1,1 @@
-# hmm-algorithms
+# hmm-text-decoding
