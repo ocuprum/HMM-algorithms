@@ -1,6 +1,7 @@
 import numpy as np
 
 class FBA():
+    '''Forward-backward algorithm'''
     def __init__(self, distribution, transition, output, observation):
         self.distribution = distribution
         self.transition = transition
@@ -9,6 +10,7 @@ class FBA():
         self.states = range(len(self.distribution))
         self.t = len(self.observation) 
         self.s = len(self.distribution)
+        self.o = self.output.shape[1]
 
     def __forward_step(self, time):
         y = self.observation[time]
@@ -47,7 +49,6 @@ class FBA():
 
         result = 0
         y = self.observation[0]
-        print(self.beta)
         for state in range(self.s):
             result += self.beta[0, state] * self.output[state, y] * self.distribution[state]   
 
