@@ -46,7 +46,7 @@ class BWA(FBA):
         
         return prob
     
-    def learn(self, iters=1000, epsilon=0.0000001):
+    def learn(self, iters=100, epsilon=0.0000001):
         prev_prob = 0 
 
         for i in range(iters):
