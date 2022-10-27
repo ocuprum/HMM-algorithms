@@ -19,3 +19,4 @@ for src in srcs:
         fhandle.write('[N = {}]\n'.format(N))
         fhandle.write(get_structure(fname, N, alphabet + ["'"]))
 
+fhandle.close()
