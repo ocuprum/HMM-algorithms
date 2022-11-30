@@ -1,5 +1,7 @@
 import numpy as np
 
+import numpy as np
+
 class FBA():
     '''Forward-backward algorithm'''
     def __init__(self, distribution, transition, output, observation):

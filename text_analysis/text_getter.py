@@ -33,3 +33,10 @@ def sym_to_num(text, alphabet=alphabet):
         obs_num.append(alphabet.index(sym))
     
     return obs_num
+
+def num_to_sym(text, alphabet=alphabet):
+    obs_num = []
+    for sym in text:
+        obs_num.append(alphabet[sym])
+    
+    return obs_num

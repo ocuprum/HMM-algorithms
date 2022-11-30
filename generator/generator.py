@@ -7,8 +7,8 @@ def generate_model(N, M, epsilon=0.01):
     o_start = 1 / M
 
     distribution = [0] * N
-    transition = np.matrix(np.zeros((N, N)))
-    output = np.matrix(np.zeros((N, M)))
+    transition = np.zeros((N, N))
+    output = np.zeros((N, M))
 
     for i in range(N):
         for j in range(N - 1):
